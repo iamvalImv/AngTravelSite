@@ -1,0 +1,11 @@
+<p>travels works!</p>
+<div class=row>
+<div class="card" style="width: 18rem;" *ngFor="let vacationpack of vacationPackage; index as vacationId">
+    <img src="{{vacationpack.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{vacationpack.destination}}</h5>
+      <p class="card-text">If you would like to {{vacationpack.description}}</p>
+      <a routerLink="/vacationPackage/{{vacationId}}" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
