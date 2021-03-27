@@ -4,11 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CartService {
-  vacations=[];
+  vacations:any[]=[];
   
   constructor() { }
   
-  addToCart(product){
+  addToCart(product:any){
     this.vacations.push(product);
   }
 
